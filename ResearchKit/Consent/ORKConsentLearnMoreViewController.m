@@ -73,7 +73,7 @@
     const CGFloat horizMargin = ORKStandardLeftMarginForTableViewCell(self.view);
     _webView.backgroundColor = ORKColor(ORKBackgroundColorKey);
     _webView.scrollView.backgroundColor = ORKColor(ORKBackgroundColorKey);
-    
+    _webView.dataDetectorTypes = UIDataDetectorTypePhoneNumber | UIDataDetectorTypeLink;
     _webView.clipsToBounds = NO;
     _webView.scrollView.clipsToBounds = NO;
     _webView.scrollView.scrollIndicatorInsets = (UIEdgeInsets){.left = -horizMargin, .right = -horizMargin};
